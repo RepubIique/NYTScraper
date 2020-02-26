@@ -42,8 +42,8 @@ app.get("/scrape", function(req, res) {
         .then(function(dbArticle) {
           console.log(dbArticle);
         })
-        .catch(function(err) {
-          console.log(err);
+        .catch(function(error) {
+          console.error(error);
         });
     });
 
@@ -56,8 +56,8 @@ app.get("/articles", function(req, res) {
     .then(function(dbArticle) {
       res.json(dbArticle);
     })
-    .catch(function(err) {
-      res.json(err);
+    .catch(function(error) {
+      res.json(error);
     });
 });
 
@@ -73,8 +73,8 @@ app.delete("/articles/:id", function(req, res) {
     .then(function(dbArticle) {
       res.json(dbArticle);
     })
-    .catch(function(err) {
-      res.json(err);
+    .catch(function(error) {
+      res.json(error);
     });
 });
 
@@ -83,8 +83,8 @@ app.get("/articles", function(req, res) {
     .then(function(dbArticle) {
       res.json(dbArticle);
     })
-    .catch(function(err) {
-      res.json(err);
+    .catch(function(error) {
+      res.json(error);
     });
 });
 
@@ -94,8 +94,8 @@ app.get("/articles/:id", function(req, res) {
     .then(function(dbArticle) {
       res.json(dbArticle);
     })
-    .catch(function(err) {
-      res.json(err);
+    .catch(function(error) {
+      res.json(error);
     });
 });
 
@@ -111,8 +111,8 @@ app.post("/articles/:id", function(req, res) {
     .then(function(dbArticle) {
       res.json(dbArticle);
     })
-    .catch(function(err) {
-      res.json(err);
+    .catch(function(error) {
+      res.json(error);
     });
 });
 
