@@ -4,17 +4,14 @@ const Schema = mongoose.Schema;
 
 let ArticleSchema = new Schema({
   title: {
-    type: String,
-    required: true
+    type: String
   },
   link: {
-    type: String,
-    required: true
+    type: String
   },
 
   summary: {
-    type: String,
-    required: true
+    type: String
   },
 
   note: {
